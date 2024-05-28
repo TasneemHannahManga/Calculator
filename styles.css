@@ -1,0 +1,96 @@
+*{
+    color: aliceblue;
+}
+
+.container {
+    background-image: url(./swirl.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: -8px;
+    height: 100vh;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 40%;
+    height: 40%;
+    font-size: 1.5rem;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#equal {
+    grid-column: span 2;
+}
+
+button {
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    height: 100%;
+    width: 100%;
+    border: solid aliceblue 2px;
+}
+
+.symbol {
+    background-color: royalblue;
+}
+
+.display {
+    height: 200px;
+    border: solid grey 1px;
+    width: 40%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: block;
+    background-color: black;
+}
+
+.pressed {
+    background-color: rgba(128, 128, 128, 0.998);
+    box-shadow: 0 0 10px white;
+}
+
+.input {
+    margin: 10px;
+    padding: 5px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    text-align: end;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+}
+
+ul li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+ul {
+    padding: 30px 10px;
+}
+
+li:not(:last-child) {
+    display: none;
+}
